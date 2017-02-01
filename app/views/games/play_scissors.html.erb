@@ -1,0 +1,146 @@
+<link rel="stylesheet" href="/assets/css/bootstrap.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+<style>
+body {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+  font-size: 37px;
+  text-align: center;
+}
+
+.gray-background {
+  background-color: lightgray;
+
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+.padding-inside-top-xs {
+  padding-top: 10px;
+}
+
+.padding-inside-top-sm {
+  padding-top: 20px;
+}
+
+.padding-inside-top-md {
+  padding-top: 50px;
+}
+
+.padding-inside-top-lg {
+  padding-top: 150px;
+}
+
+.padding-inside-top-xl {
+  padding-top: 200px;
+}
+
+.padding-inside-bottom-xs {
+  padding-bottom: 10px;
+}
+
+.padding-inside-bottom-sm {
+  padding-bottom: 20px;
+}
+
+.padding-inside-bottom-md {
+  padding-bottom: 50px;
+}
+
+.padding-inside-bottom-lg {
+  padding-bottom: 150px;
+}
+
+.padding-inside-bottom-xl {
+  padding-bottom: 200px;
+}
+
+.margin-above-top-xs {
+  margin-top: 10px;
+}
+
+.margin-above-top-sm {
+  margin-top: 20px;
+}
+
+.margin-above-top-md {
+  margin-top: 50px;
+}
+
+.margin-above-top-lg {
+  margin-top: 150px;
+}
+
+.margin-below-bottom-xs {
+  margin-bottom: 10px;
+}
+
+.margin-below-bottom-sm {
+  margin-bottom: 20px;
+}
+
+.margin-below-bottom-md {
+  margin-bottom: 50px;
+}
+
+.margin-below-bottom-lg {
+  margin-bottom: 150px;
+}
+
+.margin-below-bottom-xl {
+  margin-bottom: 200px;
+}
+
+</style>
+
+
+    <div class="row padding-inside-top-lg gray-background padding-inside-bottom-lg container-fluid">
+      <div class="container">
+        <div class="col-md-5">
+          <h1>you played <i>scissors</i> </h1>
+        </div>
+        <div class="col-md-2">
+          <h1><font color="white">
+            <i>you <%= @outcome %></i>
+          </font>
+          </h1>
+        </div>
+        <div class="col-md-5">
+          <h1>
+            computer played<i>
+            <%= @computer_move
+            %></i>
+          </h1>
+        </div>
+      </div>
+    </div>
+      <div class="row padding-inside-top-md">
+        <div class="col-md-offset-5 col-md-2">
+          play again?
+        </div>
+    </div>
+    <div class="row padding-inside-top-md">
+        <div class="col-md-offset-2 col-md-2">
+          <a href="http://localhost:3000/rock">
+          <img class="img-circle" src="https://s3.amazonaws.com/sitebuilderreport-assets/stock_photos/files/000/028/374/small/Life-of-Pix-free-stock-rocks-cube-texture-LEEROY.jpg?1477425738" height="150" width="150">
+        </a>
+        </div>
+        <div class="col-md-offset-1 col-md-2">
+          <a href="http://localhost:3000/paper">
+          <img class="img-circle" src="http://orig08.deviantart.net/eb7e/f/2008/110/f/4/lined_paper_stock_by_lovestoned786.jpg" height="150" width="150">
+          </a>
+        </div>
+        <div class="col-md-offset-1 col-md-2">
+          <a href="http://localhost:3000/scissors">
+          <img class="img-circle" src="http://previews.123rf.com/images/hamara/hamara1410/hamara141000089/32787317-old-rusty-scissors-on-the-wooden-table-Stock-Photo.jpg" height="150" width="150">
+          </a>
+        </div>
+    </div>
+</div>
